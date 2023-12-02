@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel image</title>
+    <link rel="stylesheet" >
+</head>
+<body>
+    <div class="container">
+        <div class="carousel">
+            <div class="carousel__item">
+                <img src="https://picsum.photos/200/300" alt="">
+            </div>
+            <div class="carousel__item">
+                <img src="https://picsum.photos/200/300" alt="">
+            </div>
+            <div class="carousel__item">
+                <img src="https://picsum.photos/200/300" alt="">
+            </div>
+            <div class="carousel__item">
+                <img src="https://picsum.photos/200/300" alt="">
+            </div>
+            <div class="carousel__item">
+                <img src="https://picsum.photos/200/300" alt="">
+            </div>
+            <div class="carousel__item">
+                <img src="https://picsum.photos/200/300" alt="">
+            </div>
+            <div class="carousel__item">
+                <img src="https://picsum.photos/200/300" alt="">
+            </div>
+        </div>
+        <button id="nextBtn">Next</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const carousel = document.querySelector('.carousel');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            // Initialize the current index
+            let currentIndex = 0;
+
+            nextBtn.addEventListener('click', function () {
+                // Increment the index or go back to the first image if at the end
+                currentIndex = (currentIndex + 1) % carousel.children.length;
+
+                // Update the style to show the current image
+                updateCarousel();
+            });
+
+            function updateCarousel() {
+                const translateValue = -currentIndex * 100 + '%';
+                carousel.style.transform = 'translateX(' + translateValue + ')';
+            }
+        });
+    </script>
+</body>
+</html>

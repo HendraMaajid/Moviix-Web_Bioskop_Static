@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <link rel="stylesheet" type="text/css" href="transaksi.css">
+</head>
+
+<body>
+        <div class="logo">
+            <a href="home.html"><img class="gbrlogo" src="/img/logo.png" alt="logo"></a>
+        </div>
+       <div class="form1">
+            <form>
+                <h2 class="jdlform">Masukkan Data Diri</h2>
+                <p>Nama Lengkap</p>
+                <input type="text" class="kolinput" name="nama"> 
+                <p>Email</p>
+                <input type="email" class="kolinput" name="email">
+            </form>
+       </div>
+       <br><br>
+       <div class="form2">
+            <form>
+                <h2 class="jdlform">Jumlah Pembelian</h2>
+                <table>
+                    <tr>
+                        <td>Tiket</td>
+                        <td>:</td>
+                        <td><button onclick="kurangNilai(event)">-</button></td>
+                        <td id="angka">1</td>
+                        <td><button onclick="tambahNilai(event)">+</button></td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr>
+                        <td>Total</td>
+                        <td>:</td>
+                        <td id="jumlah">35000</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <br><br>
+        <div class="form3">
+            <h2 class="jdlform">Pilih Metode Pembayaran</h2>
+            <div class="bayar">
+                <div class="kiri">
+                    <div class="mtdbayar"><input type="radio" name="bayar" value="qris" class="radio">
+                        <img class="gbrbyr" src="/img/qris.png">
+                    </div>
+                    <div class="mtdbayar">
+                        <input type="radio" name="bayar" value="shoope" class="radio">
+                        <img class="gbrbyr" src="/img/ShopeePay Logo (PNG-480p) - Vector69Com.png">
+                    </div>
+                    <div class="mtdbayar">
+                        <input type="radio" name="bayar" value="gopay" class="radio">
+                        <img class="gbrbyr" src="/img/Logo GoPay (PNG-480p) - FileVector69.png">
+                    </div>
+                </div>
+                <div class="kanan">
+                    <div class="mtdbayar">
+                        <input type="radio" name="bayar" value="ovo" class="radio">
+                        <img class="gbrbyr" src="/img/OVO-Logo.webp">
+                    </div>
+                    <div class="mtdbayar">
+                        <input type="radio" name="bayar" value="dana" class="radio">
+                        <img class="gbrbyr" src="/img/Logo DANA (PNG-480p) - FileVector69.png">
+                    </div>
+                    <div class="mtdbayar">
+                        <input type="radio" name="bayar" value="visa" class="radio">
+                        <img class="gbrbyr" src="/img/Visa (2021) Logo (3840 x 1245).png">
+                    </div>
+                </div>
+            </div>
+       </div>
+        <div id="buy">
+            <button class="tmblbuy" >
+            Buy Now
+            </button>
+        </div>
+       
+
+        <script>
+            var nilai = 0; // Nilai awal
+            var jumlah;
+            function tambahNilai(event) {
+                event.preventDefault(); // Mencegah aksi default formulir
+                nilai++; // Menambah nilai dengan 1
+                document.getElementById("angka").innerHTML = nilai; // Memperbarui tampilan nilai
+                jumlah=nilai*35000;
+                document.getElementById("jumlah").innerHTML = jumlah;
+            }
+
+            function kurangNilai(event) {
+                event.preventDefault(); // Mencegah aksi default formulir
+                nilai--; // Mengurangi nilai dengan 1
+                document.getElementById("angka").innerHTML = nilai; // Memperbarui tampilan nilai
+                jumlah=nilai*35000;
+                document.getElementById("jumlah").innerHTML = jumlah;
+             }
+        </script>
+</body>
+</html>

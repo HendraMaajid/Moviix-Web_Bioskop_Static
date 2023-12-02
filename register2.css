@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+}
+.gbrlogo{
+    height: 75px;
+}
+.logo {
+    height: 80px;
+    width: 160px;
+}
+.bungkus {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    margin: 20px;
+    background-color: #333333;
+}
+.jdlform{
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.isilogin{
+    color: white;
+    font-size: 20px;
+}
+.password{
+    width: 300px;
+    height: 25px;
+}
+.cpassword{
+    width: 300px;
+    height: 25px;
+    margin-bottom: 35px;
+}
+.register{
+    width: 310px;
+    height: 35px;
+    font-size: 18px;
+    color: white;
+    border: 1px solid #0097B2;
+    background-color: #0097B2;
+    border-radius: 6px;
+}
+.login{
+    color: white;
+    text-align: center;
+}
+.linklog{
+    color: #38B6FF;
+}
+u{
+    color: #38B6FF;
+}
+.register:hover{
+    background-color: #00879fe0;
+    transition: 0,7s;
+    border: 1px solid #00879fe0;
+}

@@ -1,0 +1,128 @@
+body {
+    background-color: black;
+    height: 1500px;
+}
+.gbrlogo{
+    height: 75px;
+}
+.logo {
+    height: 80px;
+    width: 160px;
+}
+.form1{
+    background-color: #333333;
+    height: 300px;
+    width: 95%;
+    margin-left: 27px;
+}
+.jdlform{
+    color: white;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+p{
+    padding-left: 30px;
+    color: white;
+    font-size: 18px;
+}
+.kolinput{
+    margin-left: 30px;
+    background-color: #333333;
+    height: 30px;
+    width: 93%;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.form2{
+    background-color: #333333;
+    height: 200px;
+    width: 95%;
+    margin-left: 27px;
+}
+
+td{
+    color: white;
+    font-size: 18px;
+    padding-left: 27px;
+}
+button{
+    background-color: #333333;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+.form3{
+    background-color: #333333;
+    height: 600px;
+    width: 95%;
+    margin-left: 27px;
+}
+.bayar{
+    margin-left: 27px;
+    width: 93%;
+    height: 300px;
+    display: flex;
+    gap: 50px;
+}
+.kanan{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.kiri{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.mtdbayar{
+    border: 1px solid white;
+    height: 100%;
+    width: 100%;
+    background-color: #adb4ba;
+    align-items: center;
+    justify-content: center;
+}
+.gbrbyr{
+    height: 60px;
+    padding-left: 20px;
+    padding-top: 6px;
+}
+.radio{
+    transform: scale(3);
+    display: block; 
+    margin: auto; 
+    float: left; 
+    margin-top:30px;
+    margin-left: 20px;
+}
+#buy{
+    width: 1300;
+    margin-left: 50;
+    margin-right: 50;
+    margin-top: 80;
+    margin-bottom: 70;
+    float: right;
+    color: white;
+    font-size: 20;
+    font-weight: normal;
+    padding-top: 70px;
+    padding-right: 60px;
+}
+.tmblbuy{
+background-color: rgb(10, 145, 155);
+color: white;
+margin-left: 8px;
+border: none;
+height: 50px;
+width: 150px;
+border-radius: 25px;
+font-weight: normal;
+font-size: 20px;
+cursor: pointer;
+float: right;
+}

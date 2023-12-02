@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="home.css" />
+    <link rel="stylesheet" type="text/css" href="carrousel.css" />
+    <script src="carrousel.js"></script>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header">
+        <div class="logo">
+          <img class="gbrlogo" src="/img/logo.png" alt="logo" />
+        </div>
+        <div class="menu">
+          <div class="log">
+            <div class="jarak"></div>
+            <div class="icon">
+              <a class="linklog" href="login.html"
+                ><img class="tomlogsig" src="/img/tomlog.png" alt="login"
+              /></a>
+            </div>
+            <div class="logsig">
+              <a class="linklog" href="login.html">Login</a>
+            </div>
+            <div class="icon">
+              <a class="linklog" href="register.html"
+                ><img class="tomlogsig" src="/img/tomsig.png" alt="Sign-up"
+              /></a>
+            </div>
+            <div class="logsig">
+              <a class="linklog" href="register.html">Sign-up</a>
+            </div>
+          </div>
+          <div class="navbar">
+            <div class="gap"></div>
+            <div class="navigasi">
+              <a class="linknav" href="home.html"><p><strong>Home</strong></p>
+              </a>
+            </div>
+            <div class="navigasi">
+              <a class="linknav" href="category.html"><p><strong>Category</strong></p></a
+              >
+            </div>
+            <div class="navigasi">
+              <a class="linknav" href="trending.html"><p><strong>Trending</strong></p></a
+              >
+            </div>
+            <div class="navigasi">
+              <a class="linknav" href="about.html"><p><strong>About</strong></p></a>
+            </div>
+            <div class="gap1"></div>
+            <div class="pencarian">
+              <form role="search" id="form1">
+                <input
+                  type="search"
+                  id="query"
+                  name="q"
+                  placeholder="Search..."
+                  aria-label="Search through site content"
+                />
+                <button>
+                  <svg viewBox="0 0 1024 1024">
+                    <path
+                      class="path1"
+                      d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"
+                    ></path>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!-- Carrousel start -->
+      <section>
+        <h2 class="campagnepage__section-title">NEW RELEASE !</h2>
+        <div class="video-carrousel" id="video-caroussel">
+          <input
+            type="radio"
+            name="select-video"
+            id="video-1"
+            checked
+            value="0"
+          />
+          <div class="video-carrousel__item" data-id="label-1">
+            <label class="thumb" for="video-1">
+              <a href="gotg3.html"><img src="carrousel/carrousel_1.jpg" /></a>
+              <label for="video-00" class="btn-play"
+                ><span class="icon icon-play"></span
+              ></label>
+            </label>
+            <input type="checkbox" id="video-00" class="toggle-video" />
+            <div class="video">
+              <label for="video-00" class="btn-close">&times;</label>
+              <iframe
+                name="video-player"
+                width="640"
+                height="360"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <label for="video-5" class="btn-switch btn-prev"
+              ><span class="icon icon-arrow-left"></span
+            ></label>
+            <label for="video-2" class="btn-switch btn-next"
+              ><span class="icon icon-arrow-right"></span
+            ></label>
+            <span class="active-dot"></span>
+          </div>
+
+          <input type="radio" name="select-video" id="video-2" value="2" />
+          <div class="video-carrousel__item" data-id="label-2">
+            <label class="thumb" for="video-2">
+              <a href="suzume.html"><img src="/carrousel/carrousel_2.jpg" /></a>
+              <label for="video-11" class="btn-play"
+                ><span class="icon icon-play"></span
+              ></label>
+            </label>
+            <input type="checkbox" id="video-11" class="toggle-video" />
+            <div class="video">
+              <label for="video-11" class="btn-close">&times;</label>
+              <iframe
+                name="video-player"
+                width="640"
+                height="360"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <label for="video-1" class="btn-switch btn-prev"
+              ><span class="icon icon-arrow-left"></span
+            ></label>
+            <label for="video-3" class="btn-switch btn-next"
+              ><span class="icon icon-arrow-right"></span
+            ></label>
+            <!--<span class="active-dot"></span>-->
+          </div>
+
+          <input type="radio" name="select-video" id="video-3" value="2" />
+          <div class="video-carrousel__item" data-id="label-3">
+            <label class="thumb" for="video-3">
+              <a href="tenki.html"><img src="carrousel/carrousel_3.jpg" /></a>
+              <label for="video-22" class="btn-play"
+                ><span class="icon icon-play"></span
+              ></label>
+            </label>
+            <input type="checkbox" id="video-22" class="toggle-video" />
+            <div class="video">
+              <label for="video-22" class="btn-close">&times;</label>
+              <iframe
+                name="video-player"
+                width="640"
+                height="360"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <label for="video-2" class="btn-switch btn-prev"
+              ><span class="icon icon-arrow-left"></span
+            ></label>
+            <label for="video-4" class="btn-switch btn-next"
+              ><span class="icon icon-arrow-right"></span
+            ></label>
+            <!--<span class="active-dot"></span>-->
+          </div>
+
+          <input type="radio" name="select-video" id="video-4" value="3" />
+          <div class="video-carrousel__item" data-id="label-4">
+            <label class="thumb" for="video-4">
+              <a href="fastx.html"><img src="carrousel/carrousel_4.png" /></a>
+              <label for="video-33" class="btn-play"
+                ><span class="icon icon-play"></span
+              ></label>
+            </label>
+            <input type="checkbox" id="video-33" class="toggle-video" />
+            <div class="video">
+              <label for="video-33" class="btn-close">&times;</label>
+              <iframe
+                name="video-player"
+                width="640"
+                height="360"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <label for="video-3" class="btn-switch btn-prev"
+              ><span class="icon icon-arrow-left"></span
+            ></label>
+            <label for="video-5" class="btn-switch btn-next"
+              ><span class="icon icon-arrow-right"></span
+            ></label>
+            <!--<span class="active-dot"></span>-->
+          </div>
+
+          <input type="radio" name="select-video" id="video-5" value="4" />
+          <div class="video-carrousel__item" data-id="label-5">
+            <label class="thumb" for="video-5">
+              <a href="Oppenheimer.html"><img src="carrousel/carrousel_5.png" /></a>
+            </label>
+            <label for="video-4" class="btn-switch btn-prev"
+              ><span class="icon icon-arrow-left"></span
+            ></label>
+            <label for="video-1" class="btn-switch btn-next"
+              ><span class="icon icon-arrow-right"></span
+            ></label>
+            <!--<span class="active-dot"></span>-->
+          </div>
+        </div>
+        <div class="video-carousel-nav">
+          <ul class="unlist">
+            <li><label for="video-1" id="label-1"></label></li>
+            <li><label for="video-2" id="label-2"></label></li>
+            <li><label for="video-3" id="label-3"></label></li>
+            <li><label for="video-4" id="label-4"></label></li>
+            <li><label for="video-5" id="label-5"></label></li>
+            <!--<li><label for="video-6"></label></li>-->
+            <!--<li><label for="video-7"></label></li>-->
+          </ul>
+        </div>
+      </section>
+      <!-- Carrousel end -->
+      <br /><br />
+      <h2 id="romance">All Movies</h2>
+      <div class="konten">
+        <div>
+          <a href="littlemermaid.html"
+            ><img
+              class="gbrkonten"
+              src="/img/littlemermaid.jpeg"
+              alt="littlemermaid"
+          /></a>
+        </div>
+        <div>
+          <a href="suzume.html"
+            ><img class="gbrkonten" src="/img/suzume.jpeg" alt="suzume"
+          /></a>
+        </div>
+        <div>
+          <img class="gbrkonten" src="/img/yourname.jpeg" alt="yourname" />
+        </div>
+        <div>
+          <a href="tenki.html"><img class="gbrkonten" src="/img/weathering.jpg" alt="weathering" /></a>
+        </div>
+        <div><img class="gbrkonten" src="/img/josee.jpg" alt="josee" /></div>
+      </div>
+      <br /><br />
+
+      <div class="konten">
+        <div><img class="gbrkonten" src="/img/brata.jpg" alt="brata" /></div>
+        <div><img class="gbrkonten" src="/img/jack.jpeg" alt="jack" /></div>
+        <div>
+          <img
+            class="gbrkonten"
+            src="/img/jackreacherposter.webp"
+            alt="jack2"
+          />
+        </div>
+        <div>
+          <img
+            class="gbrkonten"
+            src="/img/premiumrush.jpeg"
+            alt="premiumrush"
+          />
+        </div>
+        <div><img class="gbrkonten" src="/img/rogue.jpeg" alt="rogue" /></div>
+      </div>
+      <br /><br />
+      <div class="konten">
+        <div><img class="gbrkonten" src="/img/suzume.jpeg" alt="suzume" /></div>
+        <div>
+          <a href="Oppenheimer.html"
+            ><img
+              class="gbrkonten"
+              src="/img/oppenheimer.jpeg"
+              alt="Oppenheimer"
+          /></a>
+        </div>
+        <div><img class="gbrkonten" src="/img/5cm.jpg" alt="5cm" /></div>
+        <div>
+          <a href="tenki.html"><img class="gbrkonten" src="/img/weathering.jpg" alt="weathering" /></a>
+        </div>
+        <div><img class="gbrkonten" src="/img/maquia.jpeg" alt="maquia" /></div>
+      </div>
+      <br /><br />
+
+      <div class="konten">
+        <div>
+          <a href="gotg3.html"
+            ><img class="gbrkonten" src="/img/guardian.jpg" alt="guardian"
+          /></a>
+        </div>
+        <div>
+          <img class="gbrkonten" src="/img/jumanji.jpeg" alt="jumanji" />
+        </div>
+        <div><img class="gbrkonten" src="/img/ripd.jpg" alt="ripd" /></div>
+        <div>
+          <img class="gbrkonten" src="/img/spongebob.jpg" alt="spongebob" />
+        </div>
+        <div><img class="gbrkonten" src="/img/puss.jpg" alt="puss" /></div>
+      </div>
+      <br /><br />
+
+      <div class="konten">
+        <div>
+          <img class="gbrkonten" src="/img/evildeadrise.jpg" alt="evildr" />
+        </div>
+        <div><img class="gbrkonten" src="/img/pooh.jpeg" alt="pooh" /></div>
+        <div><img class="gbrkonten" src="/img/sewu.webp" alt="sewu" /></div>
+        <div>
+          <img class="gbrkonten" src="/img/khanzab.jpeg" alt="khanzab" />
+        </div>
+        <div>
+          <img
+            class="gbrkonten"
+            src="/img/consecration.jpeg"
+            alt="consectration"
+          />
+        </div>
+      </div>
+      <br /><br /><br />
+      <footer>
+        <div class="footer">
+          <div class="gbrfooter">
+            <img class="imgfooter" src="/img/logo.png" alt="logo" />
+          </div>
+          <div class="copyright">COPYRIGHT 2023. MOVIIX RIGHTS RESERVED</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
